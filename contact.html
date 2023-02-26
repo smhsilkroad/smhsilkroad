@@ -3,41 +3,66 @@
 <head>
 	<title>SMH Silkroad LLC - Contact</title>
     <link rel="stylesheet" href="style.css">
-    <script src="function.js"></script>
-</head>
+    </head>
 <body>
 	<header>
-		<nav>
-            <a href="index.html"><img src="img/04F.ico.jpg" alt="Logo"></a>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="about.html">About Us</a></li>
-			</ul>
-		</nav>
-	</header>
+        <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <div class="topnav-right">
+        <a href="#search">Search</a>
+        <a href="#about">About</a>
+      </div>
+    </div> 
+  </header>
 
-	<main>
-		<h1>Contact Us</h1>
-		<p>SMH Silkroad Llc</p>
-	</main>
-    <main>
-        <form>
-          <label for="first-name">First Name:</label>
-          <input type="text" id="first-name" name="first-name" required>
-      
-          <label for="last-name">Last Name:</label>
-          <input type="text" id="last-name" name="last-name" required>
-      
-          <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="phone" required>
-      
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-      
-          <input type="submit" value="Submit">
+  <div class="row">
+    <div class="col-75">
+      <div class="container" style="width: 50%;">
+        <form action="/action_page.php">
+  
+          <div class="row">
+            <div class="col-50">
+              <h3>CONTACT INFORMATION</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com">
+              
+
+              <label for="tel"><i class="fa fa-mobile"></i>Phone number</label>
+              <input type="tel" id="mobile" name="mobile" placeholder="123-456-7890">
+             
+
+              
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" placeholder="New York">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="NY">
+                </div>
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" placeholder="10001">
+                </div>
+              </div>
+            </div>
+          </div>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" value="Submit">
         </form>
-      </main>
-      
+      </div>
+      <br>
+      <br>
+      <div class="footer">
+        <p>2023 SMH Silkroad, Llc. All rights reserved</p>
+      </div>
+	      
 </body>
 </html>
