@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Location</title>
+    <link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="https://food.google.com/chooseprovider?restaurantId=/g/11bwypl9kb&g2lbs=ALIxsqrxdIYwLBG6_tPxrgWh_NWbEA0nwHuoEoCq-rXuTuXHLKEuyTz1p1WDtY81_SL08perNiCuE9TqwNgs28N2P40iw-tcvw%3D%3D&hl=en-US&gl=us&ssta=1&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=ZoUOZMPALIiy5NoPspGokAc&ei=ZoUOZMPALIiy5NoPspGokAc&fo_s=OA,AH&sei=CZx1ZUzAGyqeEZVnkeWWGkCl&utm_campaign&utm_source=search"target="_blank">Order Online</a></li>
+            <li><a href="location.html">Location</a></li>
+          </ul>
+        </nav>
+      </header>
+
+	<!-- Location tab content -->
+<div class="tab-content">
+    <h3 class="tab-title">Location</h3>
+    <div class="location-container">
+      <div class="location-info">
+        <p class="location-address">Address: 209 19th St, Virginia Beach, VA 23451</p>
+        <div class="location-hours">
+          <h4>HOURS OF OPERATION:</h4>
+          <p class="location">Monday - Thursday: 5:00pm - 10:00pm</p>
+          <p class="location">Friday - Saturday: 1:00pm - 10:00pm</p>
+          <p class="location">Sunday: 2:00pm - 10:00pm</p>
+        </div>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3216.126030649362!2d-75.97492578470493!3d36.84553787994117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ba7711dcf893d9%3A0xce0df223679e243f!2s209%2019th%20St%2C%20Virginia%20Beach%2C%20VA%2023451%2C%20USA!5e0!3m2!1sen!2sus!4v1647221622196!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  
+    
+	<script>
+        // Function to open the tab content
+        function openTab(evt, tabName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Set the default tab to be opened on page load
+        document.getElementById("tab1").style.display = "block";
+        document.getElementsByClassName("tablinks")[0].className += " active";
+      </script>
+      <footer>
+                <p>&copy; 2023 19 Italian Bistro. All rights reserved.</p>
+        <p>&copy; Developed by Harun Omar</p>
+      </footer>
+</body>
